@@ -18,12 +18,13 @@ function resetar() {
 function verificarLetra() {
     var n1 = document.getElementById("n3").innerHTML.toLowerCase(); //pq é um DIV
     var n2 = document.getElementById("n4").value; //pq é um campo de input
+    var n3 = document.getElementById("n4").value.toUpperCase();
     
     //alert(n1+ " " +n2);
     if (n1 == n2) {
-        alert("PARABÉNS!! \n Voce acertou a letra: "+n2);
+        alert("PARABÉNS!! \n Você acertou a letra: "+n3);
     } else {
-        alert("Voce errou");
+        alert("Você errou!!");
     }
     //resetarLetra();
     resetarLetra();
