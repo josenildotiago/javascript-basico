@@ -3,7 +3,10 @@ function somar(){
     var cam2 = document.getElementById("campo2").value.length;
 
     if (cam == 0 || cam2 == 0) {
-        document.getElementById("valor").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        var area = document.getElementById("valor");
+        area.innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        area.style.color = "red";
+        //document.getElementById("valor").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
     } else {
         var campo1 = parseInt(document.getElementById("campo1").value);
         var campo2 = parseInt(document.getElementById("campo2").value);
@@ -17,13 +20,18 @@ function somar(){
         inputy2.placeholder = campo2;
         document.getElementById('campo1').value='';
         document.getElementById('campo2').value='';
+        var area = document.getElementById("valor");
+        area.style.color = "green";
     }
 }
 function diminuir(){
     var cam = document.getElementById("campo3").value.length;
     var cam2 = document.getElementById("campo4").value.length;
     if (cam == 0 || cam2 == 0) {
-        document.getElementById("valor2").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        var area = document.getElementById("valor2");
+        area.innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        area.style.color = "red";
+        //document.getElementById("valor2").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
     } else {
         var campo1 = parseInt(document.getElementById("campo3").value);
         var campo2 = parseInt(document.getElementById("campo4").value);
@@ -36,6 +44,8 @@ function diminuir(){
         inputy2.placeholder = campo2;
         document.getElementById('campo3').value='';
         document.getElementById('campo4').value='';
+        var area = document.getElementById("valor2");
+        area.style.color = "green";
     }
     
 }
@@ -43,7 +53,10 @@ function multiplicar(){
     var cam = document.getElementById("campo5").value.length;
     var cam2 = document.getElementById("campo6").value.length;
     if (cam == 0 || cam2 == 0) {
-        document.getElementById("valor3").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        var area = document.getElementById("valor3");
+        area.innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        area.style.color = "red";
+        //document.getElementById("valor3").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
     } else {
         var campo1 = parseInt(document.getElementById("campo5").value);
         var campo2 = parseInt(document.getElementById("campo6").value);
@@ -56,6 +69,8 @@ function multiplicar(){
         inputy2.placeholder = campo2;
         document.getElementById('campo5').value='';
         document.getElementById('campo6').value='';
+        var area = document.getElementById("valor3");
+        area.style.color = "green";
     }
     
 }
@@ -63,7 +78,10 @@ function dividir(){
     var cam = document.getElementById("campo7").value.length;
     var cam2 = document.getElementById("campo8").value.length;
     if (cam == 0 || cam2 == 0) {
-        document.getElementById("valor4").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        var area = document.getElementById("valor4");
+        area.innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
+        area.style.color = "red";
+        //document.getElementById("valor4").innerHTML = "Valor: É preciso digitar algum valor em ambos os campos";
     } else {
         var campo1 = parseInt(document.getElementById("campo7").value);
         var campo2 = parseInt(document.getElementById("campo8").value);
@@ -76,6 +94,8 @@ function dividir(){
         inputy2.placeholder = campo2;
         document.getElementById('campo7').value='';
         document.getElementById('campo8').value='';
+        var area = document.getElementById("valor4");
+        area.style.color = "green";
     }
 
 }
