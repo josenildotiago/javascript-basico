@@ -26,7 +26,6 @@ function verificarLetra() {
     } else {
         alert("Você errou!!");
     }
-    //resetarLetra();
     resetarLetra();
 }
 function resetarLetra(){
